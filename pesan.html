@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan - Layanan Fotocopy Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="logoo.jpg" alt="Layanan Fotocopy Online" class="logo">
+                <span class="logo-text">Layanan Fotocopy Online</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="layanan.html">Layanan Fotokopi</a></li>
+                    <li><a href="kertas.html">Pilihan Kertas</a></li>
+                    <li><a href="harga.html">Harga</a></li>
+                    <li><a href="order.html">Cara Order</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                    <li><a href="hubungi.html">Hubungi Kami</a></li>
+                    <li><a href="privasi.html">Kebijakan Privasi</a></li>
+                    <li><a href="syarat.html">Syarat dan Ketentuan</a></li>
+                    <li><a href="daftar.html">Daftar Akun</a></li>
+                    <li><a href="masuk.html">Masuk</a></li>
+                    <li><a href="pesan.html">Pemesanan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Pemesanan</h1>
+        <form action="proses_pesan.php" method="POST" enctype="multipart/form-data">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="dokumen">Unggah Dokumen:</label>
+            <input type="file" id="dokumen" name="dokumen" required>
+            <label for="ukuran">Ukuran Kertas:</label>
+            <select id="ukuran" name="ukuran" required>
+                <option value="A4">A4</option>
+                <option value="A3">A3</option>
+                <option value="F4">F4</option>
+                <option value="Legal">Legal</option>
+            </select>
+            <label for="jenis">Jenis Kertas:</label>
+            <select id="jenis" name="jenis" required>
+                <option value="HVS">HVS</option>
+                <option value="Art Paper">Art Paper</option>
+                <option value="Glossy">Glossy</option>
+            </select>
+            <label for="jumlah">Jumlah Halaman:</label>
+            <input type="number" id="jumlah" name="jumlah" required>
+            <label for="alamat">Alamat Pengiriman:</label>
+            <input type="text" id="alamat" name="alamat" required>
+            <label for="pembayaran">Metode Pembayaran:</label>
+            <select id="pembayaran" name="pembayaran" required>
+                <option value="Transfer Bank">Transfer Bank</option>
+                <option value="E-wallet">E-wallet</option>
+            </select>
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Layanan Fotocopy Online. Semua Hak Dilindungi.</p>
+    </footer>
+    <script src="lll.js"></script>
+</body>
+</html>
